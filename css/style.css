@@ -1,0 +1,489 @@
+*{
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+
+.nevigation{
+    width: 100%;
+    display: flex;
+    background-color: #343A40;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo-property{
+margin-right: 100px;
+}
+
+.logo-property img{
+    height: 45px;
+    border-radius: 15px;
+}
+
+.dropdown-divider{
+    margin: 2px;
+}
+
+.nav-font{
+    margin-right: 50px;
+    font-size: 1.5em;
+}
+
+/* Banner Css */
+
+.upper{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(221,221,221);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.upper-typed{
+    height: 20%;
+    font-size: 3rem;
+}
+
+.search-box{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover  .search-data{
+    width: 500px;
+}
+
+.search-box:hover  .search-btn{
+    background-color: white;
+}
+
+.search-box input{
+    width: 0px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn{
+    color: green;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2f3640;
+    display: flex;
+    transition: 0.4s;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.search-data{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+    transition: 0.4s;
+    line-height: 40px ;
+}
+                
+/* .top-3-exams  */
+.top-3-exam{
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+}
+
+/* Banner Heading  */
+.heading{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: -25px;
+}
+.top-3-exam-data{
+    display: flex;
+
+}
+
+.exam-design{
+    margin: 18px;
+    color: blue;
+    width: 23rem;
+   
+}
+.exam-design:hover{
+    box-shadow: 0 0 10px gray;
+}
+.exam-design img{
+    height: 75%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+.card-body a:hover{
+    color: red;
+}
+
+/* Notification Bar  */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+  
+  .sidebar a {
+    margin-left: 8%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    margin-right: 25px;
+    font-size: 36px;
+    margin-left: 90%;
+  }
+  .sidebar h1{
+      text-align: center;
+      color: white;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #343A40;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    margin-left: -17px;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: -100px;
+    float: right;
+  }
+  
+  marquee{
+    color: white;
+  }
+  .new{
+      color:red;
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 1200px){
+    .logo-property{margin-right: 50px;}
+    .search-box:hover  .search-data{width: 425px;}
+    .queary-form{width: 100%;}
+    .exam-design{width: 18rem;}
+}
+
+@media screen and (max-width: 990px){
+    .queary-form{width: 100%;}
+    .queary-form{width: 100%;}
+    .search-box:hover  .search-data{width: 350px;}
+    .exam-design{width: 15rem;}
+}
+
+/* Blog Section  */
+.blog{
+    height: 450px;
+    width: 100%;
+    overflow:hiddenf;
+    background-color:#EEE ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.blog-data{
+    display: flex;
+    /* width: 100%; */
+}
+.blog-design{
+    margin: 8px;
+    height: 350px;
+}
+.blog-design:hover{
+    box-shadow: 0 0 10px gray;
+}
+
+.blog-design p{
+    font-size: 1.1rem;
+}
+
+.blog-design a{
+    margin-top:-20px;
+}
+
+
+
+
+/* Suggestion And Queary  */
+.suggestion{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.queary-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 45%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px gray;
+    
+}
+.queary-form form{
+    /* display:flex;
+    flex-direction: column; */
+}
+.queary-form input{
+    height: 3rem;
+    margin: 5px;
+    background-color: #DDDDDD;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.queary-form textarea{
+    margin: 5px;
+    background-color: #DDDDDD;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.3rem;
+}
+.queary-form ::placeholder{
+    font-size: 1.3rem;
+}
+#btn{
+    padding: 3px;
+    font-size: 2rem;
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(right,#55C0D6,#8D11CB);
+}
+#btn:hover{
+
+    background: -webkit-linear-gradient(right,#8D11CB,#55C0D6);
+    transition:all 0.4s;
+}
+
+
+/* Footer Section  */
+.footer-section{
+    flex-direction: column;
+    height: 250px;
+    background-color: rgb(27, 27, 27);
+}
+.footer-top{
+    height: 80%;
+    display: flex;
+}
+     /* Quick link Relatied to Website  */
+.quick-link{
+    width: 30%;
+}
+.quick-link ul li{
+    margin-left: 40%;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+
+.upcoming-features{
+    width: 45%;
+}
+
+.upcoming-features ul li{
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+.social{
+    color: white;
+    width: 25%;
+}
+.social ul {
+    display: flex;
+    flex-direction: column;
+}
+.social ul li {
+margin: 6px;
+float: right;
+list-style: none;
+}
+
+.social ul li a:hover{
+    color:hotpink;
+    
+}
+
+.social ul li a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.fa{
+    margin-right: 10px;
+}
+.footer-bottom{
+    bottom: 0;
+    height: 20%;
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ALl Pop Up Design Start From Here Like Log-In Sign-up  */
+
+.login-form{
+    display: none;
+    margin-left: 30%;
+    margin-top: 8%;
+    height: 70%;
+    width: 35%;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    shape-outside: border-box;
+    transition: all 0.5s;
+}
+.closePopBtn{
+    top: 0;
+    float: right;
+    margin-right: 25px;
+    color: rgba(7, 7, 7, 0.774);
+    font-size: 28px;
+}
+
+.login-form h1{
+    font-size: 30px;
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.form{
+height: 55%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.form li{
+    list-style: none;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    font-size: 2rem;
+    color: rgb(73, 71, 71);
+}
+.form li input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(97, 95, 95);
+    width: 80%;
+}
+
+#forgot-password{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: -4%;
+}
+#forgot-password a{
+    font-size: 1rem;
+    float: left;
+}
+
+.login-btn{
+    width: 75%;
+    border-radius: 35px;
+    border: none;
+    background: -webkit-linear-gradient(right,#3354AD,#40ABE7);
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+#not-a-member{
+    font-size: 1rem;
+}
