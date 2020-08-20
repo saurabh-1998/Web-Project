@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <!-- <section class="nevigation"> -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main_navbar">
-            <a class="navbar-brand logo-property" href="./index.html"><img src="./img/McaIndia.jpeg" alt=""></a>
+    <section class="nevigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container" id="main_navbar">
+            <a class="navbar-brand logo-property" href="#"><img src="./img/McaIndia.jpeg" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -119,22 +119,36 @@
                     </ul>
                     </li>
 
-                    <li class="nav-item nav-font"> <a class="nav-link" href="./blog.html">Blog</a> </li>
-                    <li class="nav-item nav-font"> <a class="nav-link" href="#">SignUp</a> </li>
-                    <li class="nav-item nav-font"><a class="nav-link" href="#"> LogIn</a> </li>
-                    <!-- <div id="main"> -->
+                    <li class="nav-item nav-font"> <a class="nav-link" href="#">Blog</a> </li>
+                    <li class="nav-item nav-font"> <a class="nav-link" href="#">Sign Up</a> </li>
+                    <li class="nav-item nav-font"><a class="nav-link" href="javascript:void(0)" onclick="openPopUp()"> Sign In</a> </li>
                     <button class="openbtn" id="clkbtn" onclick="openNav()"> Notification</button>
-                    <!-- </div> -->
                     </ul>
                 </div>
         </nav>
-        <!-- <div id="main">
-                        <button class="openbtn" id="clkbtn" onclick="openNav()"> Notification</button>
-                    </div> -->
-    <!-- </section> -->
+    </section>
+
+    <section class="login-contain">
+        <div class="login-form" id="login">
+            <a href="javascript:void(0)" class="closePopBtn" onclick="closePopUp()">x</a>
+            <h1>SIGN <strong style="color: green;">IN</strong></h1>
+            <form action="" class="form">
+                <li>    
+                    <i class="fa fa-user" aria-hidden="true"></i><input type="email" name="" id="" placeholder="Your Email" style="font-size: 1.2rem;" required>
+                </li>
+                <li>
+                    <i class="fa fa-lock" aria-hidden="true"></i><input type="password" name="" id="" placeholder="Your Password" style="font-size: 1.2rem;" required>
+                </li>
+              <li id="forgot-password"><a href="" >Forgot Password?</a> </li>
+                <li>
+                    <button type="submit" class="login-btn">Sign In</button>
+                </li>
+                <li id="not-a-member">Not a Member?<a href="">Sign Up</a></li>
+        </div>
+    </section>
 
     <!-- Blogging Section Start  -->
-    <section class="blog" id="blog">
+    <!-- <section class="blog" id="blog">
         <div class="blog-data">
             <div class="card blog-design" style="width: 18rem;">
                 <img src="./img/bhu.jpg" class="card-img-top" alt="...">
@@ -143,9 +157,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, et! 
                         <a href="#">more...</a>
                     </p>
-                    
                 </div>
             </div>
+
             <div class="card blog-design" style="width: 18rem;">
                 <img src="./img/bhu.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -155,6 +169,17 @@
                     </p>
                 </div>
             </div>
+
+            <div class="card blog-design" style="width: 18rem;">
+                <img src="./img/bhu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#"> Heading</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, et! 
+                        <a href="#">more...</a>
+                    </p>
+                </div>
+            </div>
+
             <div class="card blog-design" style="width: 18rem;">
                 <img src="./img/bhu.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -165,8 +190,117 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
+    <div class="container">
+        <div class="row mb-3">
+  
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                <div class="card-body" style="font-size: 1rem;">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <p>This is a card</p>     -->
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+            </div>  
+  
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                <div class="card-body" style="font-size: 1rem;">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <p>This is a card</p>  -->
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+            </div>
+  
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                <div class="card-body" style="font-size: 1rem;">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <p>This is a card</p>  -->
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+            </div>
+  
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                    <div class="card-body" style="font-size: 1rem;">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <p>This is a card</p>  -->
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+
+      <div class="row mb-3">
+
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                <div class="card-body" style="font-size: 1rem;">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <p>This is a card</p>  -->
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                <div class="card-body" style="font-size: 1rem;">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <p>This is a card</p>  -->
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                <div class="card-body" style="font-size: 1rem;">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <p>This is a card</p>  -->
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="./img/bhu.jpg" alt="Card image cap">
+                <div class="card-body" style="font-size: 1rem;">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <p>This is a card</p>  -->
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
 <!-- Blog form  -->
     <div class="container">
         <form class="needs-validation" novalidate>
@@ -233,7 +367,7 @@
         </form>
     </div>
 
-    <!-- Footer Sectio Start  -->
+    <!-- Footer Section Start  -->
     <footer class="footer-section">
         <div class="footer-top">
             <div class="quick-link">
@@ -255,7 +389,7 @@
             <div class="social">
                 <ul>
                     <li> <a href="https://www.facebook.com/mcaindiago/"><i class="fa fa-facebook"
-                                aria-hidden="true"></i>Facebook Page</a></li>
+                                aria-hidden="true"></i>Facebook</a></li>
                     <li><a href="https://api.whatsapp.com/send?phone=917277714371"><i class="fa fa-whatsapp"
                                 aria-hidden="true"></i>WhatsApp</a></li>
                     <li><a href=""> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
