@@ -2,6 +2,7 @@
     top: 0;
     left: 0;
     scroll-behavior: smooth;
+    
 }
 
 .nevigation{
@@ -36,13 +37,13 @@ margin-right: 100px;
     height: 350px;
     width: 100%;
     background-color: rgb(221,221,221);
+    /* background: url("../img/nimcet.jpg") no-repeat center center fixed; */
+    /* background-size: cover; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 .upper-typed{
     height: 20%;
     font-size: 3rem;
@@ -131,7 +132,6 @@ margin-right: 100px;
 
 .exam-design{
     margin: 18px;
-    color: blue;
     width: 23rem;
    
 }
@@ -225,42 +225,45 @@ margin-right: 100px;
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+    .exam-design{width: 10rem;}
+    
   }
 
   @media screen and (max-width: 1200px){
     .logo-property{margin-right: 50px;}
     .search-box:hover  .search-data{width: 425px;}
-    .queary-form{width: 100%;}
+    .queary-form{width: 100%}
     .exam-design{width: 18rem;}
+    .exam-design img{height: 60%;}
+    .upper-typed{font-size: 2rem;}
 }
 
 @media screen and (max-width: 990px){
-    .queary-form{width: 100%;}
-    .queary-form{width: 100%;}
+    .queary-form{width: 100%}
     .search-box:hover  .search-data{width: 350px;}
     .exam-design{width: 15rem;}
+    .upper-typed{font-size: 1.5rem;}
 }
 
 /* Blog Section  */
 .blog{
     height: 450px;
     width: 100%;
-    overflow:hiddenf;
     background-color:#EEE ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-
 }
 .blog-data{
     display: flex;
-    /* width: 100%; */
+    align-items: center;
+    justify-content: center;
 }
 .blog-design{
     margin: 8px;
     height: 350px;
+    width: auto;
 }
 .blog-design:hover{
     box-shadow: 0 0 10px gray;
@@ -289,14 +292,14 @@ margin-right: 100px;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    width: 45%;
+    width:45%;
     background-color: #FFFFFF;
     box-shadow: 0 0 15px gray;
     
 }
 .queary-form form{
-    /* display:flex;
-    flex-direction: column; */
+    display:flex;
+    flex-direction: column;
 }
 .queary-form input{
     height: 3rem;
@@ -410,7 +413,9 @@ list-style: none;
 
 
 /* ALl Pop Up Design Start From Here Like Log-In Sign-up  */
-
+.login-contain{
+    /* display: none; */
+}
 .login-form{
     display: none;
     margin-left: 30%;
@@ -418,7 +423,7 @@ list-style: none;
     height: 70%;
     width: 35%;
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     background-color: white;
     shape-outside: border-box;
     transition: all 0.5s;
@@ -462,15 +467,11 @@ align-items: center;
     border-bottom: 1px solid rgb(97, 95, 95);
     width: 80%;
 }
-
-#forgot-password{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.forgot-password{
     margin-right: 25px;
     margin-top: -4%;
 }
-#forgot-password a{
+.forgot-password a{
     font-size: 1rem;
     float: left;
 }
@@ -482,8 +483,69 @@ align-items: center;
     background: -webkit-linear-gradient(right,#3354AD,#40ABE7);
     font-size: 1.5rem;
     padding: 8px;
+    outline: none;
 }
 
 #not-a-member{
     font-size: 1rem;
+}
+
+.signup-form{
+    display: none;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 72%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    shape-outside: border-box;
+    transition: all 0.5s;
+}
+.head{
+    height: 15%;
+    width: 100%;
+}
+
+.signup-form h1{
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.signupform{
+    width: 100%;
+    margin-bottom: 0px;
+    height: 85%;
+}
+.signupform li{
+    list-style: none;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    color: rgb(73, 71, 71);
+}
+.signup-form li input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(97, 95, 95);
+    width: 80%;
+}
+.have-account{
+   margin-left: 90%;
+   color: red;
+}
+
+.other{
+    margin-top: -15px;
+    margin-left: 8%;
+    padding: 2%;
+    font-size: 3vh;
+    cursor: pointer;
+}
+.other:hover{
+    box-shadow: 0 0 8px gray;
 }
