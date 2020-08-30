@@ -30,3 +30,12 @@ var typed = new Typed('.element', {
   function openPopUp(){
     document.getElementById('login').style.display="block";
   }
+
+//Sign Up
+function closeSignUp(){
+  document.getElementById('signup').style.display="none";
+}
+
+function openSignUp(){
+  document.getElementById('signup').style.display="block";
+}
