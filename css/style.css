@@ -2,7 +2,6 @@
     top: 0;
     left: 0;
     scroll-behavior: smooth;
-    
 }
 
 .nevigation{
@@ -51,7 +50,7 @@ margin-right: 100px;
 
 .search-box{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #2f3640;
